@@ -4,7 +4,8 @@ A python package for the MolSSI Software Summer School.
 """
 
 # Add imports here
-from .molecule import *
+import geometry_analysis.molecule
+import geometry_analysis.measure
 
 # Handle versioneer
 from ._version import get_versions
