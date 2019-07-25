@@ -64,6 +64,7 @@ def test_molecule_coords_setter(water_molecule):
     new_num_bonds = len(water_molecule.bonds)
     assert new_num_bonds == 0
 
+
 def test_name_type_check():
 
     name = 24
