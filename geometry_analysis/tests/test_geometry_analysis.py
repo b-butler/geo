@@ -25,11 +25,11 @@ def test_calculate_distance():
 
 
 def test_calculate_angle():
-    '''Test that pointss are cacluated correctly.'''
-    points = np.array([[0, 0, 1],
-                       [0, 0, 0],
-                       [1, 0, 0]])
-    expected_angle = np.pi
+    '''Test that pointss are cacluated correctly.
+
+    Relies on the fact that all angles between three points is pi radians.'''
+    points = np.random.random((3, 3))
+    expected_angle = 2 * np.pi
     calculated_angle = 0
     for permutation in itertools.permutations(points):
         calculated_angle += geometry_analysis.measure.calculate_angle(permutation[0],
